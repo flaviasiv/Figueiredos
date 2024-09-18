@@ -470,10 +470,19 @@ swiper-slide.swiper1 {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 670px;
+    max-width: 550px;
     margin: auto;
     text-align: center;
     color: #FFF;
+}
+.abouttitle{
+    max-width: 660px;
+}
+.abouttitle p{
+    max-width: 570px;
+}
+.abouttext p{    
+    max-width: 360px;
 }
 .aboutpref{
     display: flex;
@@ -546,6 +555,9 @@ swiper-slide.swiper1 {
     padding: 0 10px 30px;
     margin: auto;
 }
+.reviewstitle h3{
+    max-width: 290px;
+}
 .imbvw{
     height: 100%;
 }
@@ -556,14 +568,6 @@ swiper-slide.swiper1 {
     max-height: 500px;
     margin-bottom: -3px;
     object-position: bottom;
-}
-@media screen and (max-width:1300px) {    
-    .aboutpref{
-        margin-top: -5%;    
-    }
-    .abouttext{
-        max-width: 453px;
-    }
 }
 @media screen and (max-width:990px) {
     .about{
