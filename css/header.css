@@ -233,8 +233,8 @@ position: absolute;
     .logow{
     z-index: 9;
     display:block;
-    width: 100px;
-    top: 18px;
+    width: 70px;
+    top: 5px;
     left: 20px;
     position: absolute;
     }
@@ -311,27 +311,33 @@ position: absolute;
     background-color:#000;
     flex-direction: column;
     align-items:center;
-    margin-top: 60px;
+    margin-top: 0;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    padding-top: 0px;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:220px;
+      padding-bottom: 10px;
+      height:200px;
   }
+  ul li.callw{display: none;}
   .menu-links ul{
       display: block;
   }
   .menu-linksbtn{
       display: flex;
-      margin-bottom: 0px;
+      justify-content: space-between;
+      height: 120px;
+      padding-bottom: 0px;
   }
   .menu-linksbtn ul{
     display: flex;
     flex-direction: column;
-    gap: 3px;
   }
+  
+.dropdown .dropbtn {
+  padding: 0 6px;
+}
   .menusocial ul{
       display: flex;
       flex-direction: row;
