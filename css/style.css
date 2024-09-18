@@ -1,0 +1,1101 @@
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url("../GlacialIndifference-Regular.otf"),
+         url("../GlacialIndifference-Bold.otf"),
+         url("../GlacialIndifference-Italic.otf");
+}
+@font-face {
+    font-family: 'Ethnocentric';
+    src: url("../ethnocentric-rg.otf"),
+         url("../ethnocentric-rg-it.otf");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Glacial Inddifference', sans-serif;
+    color: #000;
+}
+main{
+    background: white;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 30px;
+}
+/* .reveal{
+    position: relative;
+    transform: translateX(-50%);
+    opacity: 0.4;
+    transition: 0.5s all ease;
+}
+.reveal.active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.reveal.revealtext{
+    position: relative;
+    transform: translateX(0%);
+    opacity: 0.2;
+    transition: 0.5s all ease;
+}
+.reveal.active.revealtext{
+    transform: translateX(0%);
+    opacity: 1;
+} */
+:root {
+    --swiper-navigation-color: #eee;
+    --swiper-pagination-color: #000;
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
+    --scroll: 0
+}
+swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: relative;
+    width:100%;
+    max-width:9999px;
+    margin: auto;
+}
+.vetor1{
+    width: 48px;
+    margin: auto;
+}
+.small{
+    display: flex;
+    margin: auto;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    background: linear-gradient(86deg, #515151 0%, #9F9F9F 46.44%, #515151 100%);
+    font-family: "Glacial Indifference";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #FFF;
+}
+.servicesbutton{
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  list-style: none;
+  color: #000;
+  border-radius: 100px;
+  padding: 16px 0;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #8E8E8E 0%, #D9D9D9 68.5%, #B4B4B4 100%);
+  cursor: pointer;
+  border: none;
+  margin: auto;  
+  z-index: 999;
+}
+.servicesbutton a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+.bg-grey{
+    background: linear-gradient(111deg, #585656 0%, #000 44.79%, #585656 96.32%);
+}
+.about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2, .abouttitle h1, .abouttext h2, .mapsinfos h2{
+    font-family: "Glacial Indifference";
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%; /* 32px */
+    margin: auto;
+    text-transform: uppercase;
+}
+.about p, .reviewstitle p, .gallerytitle p,.formgrid p, .abouttitle p, .abouttext p, .mapsinfos p{
+    font-family: "Glacial Indifference";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+    margin: auto;
+}
+.postercontainer{
+    margin-top: 80px;
+}
+.poster{
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 50px;
+    margin: auto;
+    height: 34.5vw;
+}
+/*@media screen and (max-width:1700px) {
+    .poster{
+        gap: 323px;
+    }
+}
+@media screen and (max-width:1500px) {
+    .poster{
+        gap: 250px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .poster{
+        gap: 150px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .poster{
+        gap: 70px;
+    }
+} */
+.posterinfos{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+}
+/* .postercontainer video{
+    position: absolute;
+    display: block;
+    max-width: 61vw;    
+    z-index: 999;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    right: 0;
+} */
+.posterimgbg{
+    position: absolute;
+    display: block;
+    max-width: 50vw;   
+    height: 100%; 
+    z-index: 999;
+    right: 0;
+    object-fit: cover;
+}
+.posterinfos img{
+    max-width: 200px;
+    z-index: 999;
+}
+.posterinfos ul{
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+}
+.posterinfos ul li{
+    list-style: none;
+}
+.postergrid{
+    padding-bottom: 80px;
+}
+.firstswip{
+    display: block;
+    padding: 20px 0 10px;
+    border-top: 1px solid #8E8E8E;
+    /* border-image: linear-gradient(90deg, #8E8E8E 0%, #D9D9D9 68.5%, #B4B4B4 100%); */
+    z-index: 999;
+}
+swiper-container.mySwiper1 {
+  width: 100%;
+  height: 100%;
+  height: 45px;
+  cursor: grab;
+  margin: 0 !important;
+  z-index: 99;
+  padding: 5px 0;
+}
+swiper-slide.swiper1 {
+    width: 100%;
+    max-width: fit-content;
+    margin-left: 30px;
+    text-transform: capitalize;
+}
+.firstswip .swiper1{
+    border-radius: 0;
+}
+.firstswip ul li{list-style: none}
+@media screen and (max-width:950px) {
+    .poster{
+        flex-direction: column;
+        text-align: center;
+        padding: 0 20px;
+        height: 100%;
+    }
+    .posterinfos{
+        flex-direction: column;
+        width: 100%;    
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .postercontainer video{
+        position: relative;
+        width: 100%;    
+        max-width: 900px;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .posterinfos h3{
+        font-size: 40px;
+    }
+    #posterbtn{
+        margin: auto;
+    }
+} 
+.servicescontainer{
+    padding-bottom: 50px;
+}
+.servicestitle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0 50px;
+    color: #000;
+    z-index: 999;
+}
+.servicestitle .small{margin: auto;}
+.servicestitle h2{
+    color: #000;
+    font-family: "Glacial Indifference";
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 100%; /* 32px */
+    text-transform: uppercase;
+    max-width: 350px;
+    margin: auto;
+}
+.servicestitle p{
+    display: block;
+    max-width: 418px;
+    font-family: "Glacial Indifference";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%; 
+    margin: auto;
+}
+.servibtn{
+    margin: auto;
+}
+.servicesgrid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    color: #000;
+    gap: 50px;
+}
+.MySwiper2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* width p/ 4 cards */
+    max-width: 1350px;
+    height: 100%;
+    cursor: grab;
+    margin: auto !important;
+}
+.mySwiper:host{
+    --swiper-theme-color: #fff;
+}
+.swiper2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: center;
+  width: 100%;
+  max-width: 313px;
+  height: 337px;
+  border-radius: 30px;
+  margin-left: 15px;
+  overflow: hidden;
+    border: 1px solid #000;
+}
+.swiper2 img {
+  width: 100% !important;
+  max-width: none !important;
+  margin: auto;
+  object-fit: cover !important;
+  object-position: center;
+}
+.cardinfos h6{
+    position: absolute;
+    font-family: "Glacial Indifference";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 100%; 
+    text-transform: uppercase;
+    color: #000;
+    top: 24px;
+    left: 24px;
+}
+.bgservcar{
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    justify-content: center;
+    width: 100%;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    bottom: 0;
+}
+.servicesbtn{
+    position: absolute;
+    top: 95px;
+    left: 24px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border: none;
+    color: #000;
+    border-radius: 16px;
+    padding: 5px 10px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 150%;
+    background-color: transparent;
+    border: 1px solid #000;
+    cursor: pointer;
+    width: 130px;
+}
+.servicescard h2, .servicescard img:last-child{
+    position: relative;
+}
+.bgserv, .aboutimgpref{
+    position: absolute;
+    right: 0;
+    top: 350px;
+    z-index: 0;
+}
+@media screen and (max-width:990px) {
+    swiper-slide.swiper2 {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+    .servicestitle{
+        text-align: center;
+    }
+    .servicestitle h2{
+        font-size: 40px;
+    }
+    .servicestitle .vetor1{
+        margin: auto;
+    }
+    .servicestitle p{
+        max-width: 359px;
+        font-size: 14px;
+        margin: auto;
+    }
+    .servicesgrid{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .servicescards h1{
+        font-size: 29px;
+    }
+    .servicescard a h2{
+        font-family: "Glacial Indifference";
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        width: 206px;
+        color: #fff;
+    }
+    .servicesgrid{
+        max-width: 420px;
+        margin: auto;
+    }
+    .servicescards{
+        padding: 0;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+    .servicescard a{
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        width: 375px;
+        height: 97px;
+        padding: auto;
+    }
+    .bgservcar{
+        max-width: 375px;
+    }
+    .servicescard{
+        width: 100%;
+        max-width: 375px;
+        margin: auto;
+    }
+    .bgserv, .aboutimgpref{display: none;}    
+}
+@media screen and (max-width:400px) {
+    .servicescard a{
+        width: 355px;
+        height: 87px;
+    }
+    .bgservcar{
+        max-width: 355px;
+    }
+    .servicescard{
+        width: 100%;
+        max-width: 355px;
+        margin: auto;
+    }
+    
+}
+.aboutcontainer{
+    background: url(../assets/aboutbg.png) no-repeat 100%;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0 120px 0;
+}
+.about .small, .aboutpref .small{width: 120px;}
+.abouttitle, .abouttext{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 670px;
+    margin: auto;
+    text-align: center;
+    color: #FFF;
+}
+.aboutpref{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 50px;
+    justify-content: center;
+    gap: 24px;
+    color: #FFF;
+}
+.preferencegrid{
+    display: flex;
+    gap: 24px;
+    margin: auto;
+}
+.preferencecard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100px;
+    gap: 27px;
+    width: 180px;
+    margin: auto;
+}
+/* .preferencecard:hover h3{
+    color: #000;
+    transition: 0.3s all;
+}
+.preferencecard:hover svg{
+    stroke: #000;
+    transition: 0.2s all;
+}
+.preferencecard:hover svg path{
+    fill: #000;
+    transition: 0.2s all;
+}
+.preferencecard:hover{
+    box-shadow: 10px 10px 16px rgba(3, 3, 3, 0.5); 
+    transition: 0.3s all;
+} */
+.preferencecard svg{
+    width: 87px;
+}
+.preferencecard h3{
+    font-family: "Glacial Indifference";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 100%; 
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 104px;
+}
+.reviewscontainer{
+    flex-direction: column;
+    gap: 34px;
+}
+.logo{
+    display: flex;
+    max-width: 330px;
+    margin: auto;
+    margin-top: 60px;
+}
+.reviewstitle{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    max-width: 438px;
+    padding: 0 10px 30px;
+    margin: auto;
+}
+.imbvw{
+    height: 100%;
+}
+.imgvwbg{
+    width: 100%;
+    max-width: 100vw;
+    object-fit: cover;
+    max-height: 500px;
+    margin-bottom: -3px;
+    object-position: bottom;
+}
+@media screen and (max-width:1300px) {    
+    .aboutpref{
+        margin-top: -5%;    
+    }
+    .abouttext{
+        max-width: 453px;
+    }
+}
+@media screen and (max-width:990px) {
+    .about{
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about .vetor1{margin: auto;}
+    .aboutpref{
+        margin-top: -30%;    
+        padding: 220px 0 100px;
+    }
+    .abouttext p, .abouttext{
+        text-align: center;
+        max-width: 383px;
+        margin: auto;
+        font-size: 14px;
+    }
+    .aboutimm{
+        display: block;
+        width: 100%;
+        padding-right: 5%;
+    }
+    .preferencegrid{
+        align-items: center;
+        margin: auto;
+    }
+    .preferencecard{
+        text-align: left;
+        margin: auto;
+        padding: 0;
+    }
+    .preferencecard h3{
+        font-size: 23.035px;
+        line-height: 100%; /* 23.035px */
+    }
+    .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width:490px) {
+    .abouttext p, .abouttext{
+        max-width: 353px;
+    }
+    .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2{
+        font-size: 36px;
+    }
+}
+.gallerytitle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+    margin: auto;
+    padding: 70px 0 0;
+    z-index: 999;
+}
+.gallerytitle .small{color: #fff;}
+.gallerytitle p{
+    font-family: "Glacial Indifference";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+    max-width: 602px;
+    margin: auto;
+}
+.gallerygrid{
+    margin: 40px auto;
+}
+.mySwiper3 {
+  width: 100%;
+  height:430px;
+  max-width: 9000px;
+  cursor: grab;
+  margin: 0 auto !important;
+}
+.swiper3 {
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+}
+.swiper3 img {
+  width: 100% !important;
+  max-width: 400px;
+  height: 100%;
+  object-fit: cover !important;
+  object-position: center;
+}
+@media screen and (max-width:900px) {    
+    .gallerycontainer{
+        background-size: 250%;
+    }
+    .bggallery{
+        height: 880px;
+    }
+    .videobg{
+        height: 880px;
+    }
+    .mySwiper3 {
+      height:290px;
+    }
+    .swiper3 {
+      max-width: 340px;
+    }
+    .swiper3 img {
+      max-width: 340px;
+    }
+    .gallerytitle p{font-size: 14px;}
+}
+
+/* IG CONTAINER */
+.ig-embed{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;
+    padding: 80px 0 30px;
+    color: #000;
+    z-index: 999;
+    height: 100%;
+}
+.ig-embed h2{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 32px;
+    font-family: 'Ethnocentric';
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 120%; /* 67.2px */
+    text-transform: uppercase;
+}
+.ig-embed iframe{
+    width:100%;
+    max-width: 900px; 
+    height: 810px;
+}
+@media screen and (max-width:980px) {
+    .ig-embed .iframe{
+        max-width: 500px; 
+        height: 500px;
+    }    
+}
+@media screen and (max-width:580px) {
+    .ig-embed h2{
+        font-size: 36px;
+    }
+    .ig-embed .iframe{
+        width:100%;
+        max-width: 300px; 
+        height: auto;
+    }    
+}
+.formgrid{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;
+    background: url(../assets/formbg.png) no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    /* background-size: 100%; */
+    padding: 120px 50px;
+}
+.formp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 699px;
+    gap: 30px;
+    margin: auto;
+    color: #fff;
+}
+.formp h2{
+    width: 660px;    
+    font-family: "Glacial Indifference";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 100%; /* 32px */
+    text-transform: uppercase;
+}
+.formp p{
+    font-family: "Glacial Indifference";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%; 
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.logoform{
+    width: 210px;
+    z-index: 99;
+    margin-bottom: 0px;
+}
+form {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width:750px;
+    max-width: 100%;
+    margin: auto;
+    height: 579px;
+    background-color: #FFF;
+    border-radius: 24px;
+    padding: 32px;
+    z-index: 99;
+}
+.formgroup{
+    display: flex;
+    gap: 10px;
+}
+.form label{
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    gap: 10px;
+}
+#form input, textarea{
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid #333333d8;
+    resize: none;
+}
+#form input{
+    height:  46px;    
+}
+form button{
+    width: 120px;
+    list-style: none;
+    color: #000;
+    border-radius: 16px;
+    padding: 10px;
+    margin: auto;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 15px;
+    border:1px solid #000
+}
+form button:hover{
+    background-color: #CAAA57;
+    color: #FFF;
+    border:1px solid #fff
+}
+#form input:focus, #form textarea:focus{
+    outline: 1px solid #fff;     /* oranges! yey */
+}
+@media screen and (max-width:980px) {
+    .formp{
+        flex-direction: column;
+        padding: 0;
+    }
+    .formp h2{
+        width: 330px;    
+        font-size: 36px;
+    }
+    .formgrid{
+    padding: 100px 10px;
+}
+}
+.mapscontainer{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;
+    background-color: #fff;
+    padding: 48px 0 86px;
+}
+.mapsfooter{
+    display: flex;
+    width: 100%;
+    max-width: 810px;
+    margin: auto;
+    justify-content: space-between;
+}
+.mapsinfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    gap: 24px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+.mapinfo .vetor1{margin: auto;}
+.mapsinfos .small, .formp .small{
+    width: 120px;
+}
+.mapscontainer iframe{
+    border-radius: 25px;
+    margin-right: 30px;
+    max-width: 550px;
+    max-height: 400px;
+}
+.mapsfooter .mapinfo ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin: auto;
+    margin-top: 25px;
+    list-style: none;
+}
+.mapinfo ul li h2{
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+}
+.mapinfo ul li a{
+    margin-top: 8px;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+.mapinfo ul li p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.mapscontainer h6{
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 150%; 
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.listareas{
+    color: #fff;
+    display: flex;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    justify-content: center;
+    gap: 56px;
+    text-align: left;
+    margin-top: 32px;
+    font-family: 'Urbanist';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.listareas ul li{
+    list-style: none;
+}
+.listareas ul li:before {
+    content:"·";
+    font-size:20px;
+    margin-right: 15px;
+}
+@media screen and (max-width:800px) {
+    .mapscontainer{
+        padding: 48px 20px 86px;
+    }
+    .mapsfooter{
+        flex-direction: column;
+    }
+    .mapsfooter iframe{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 350px;
+        margin: auto;
+    }
+    .mapsfooter .mapinfo ul{
+        text-align: center;
+    }
+    .mapinfo ul li h2{
+        font-size: 20px;
+    }
+    .mapinfo ul li a{
+        font-size: 14px;
+    }
+    .mapinfo ul li p{
+    font-size: 14px;
+    }
+    .listareas{
+        gap: 36px;
+    }
+}
+.popuptest{
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    padding: 200px 0 100px;
+    gap: 32px;
+}
+.popup .content{
+    position: relative;
+    display: flex;  
+    flex-direction: column;  
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    gap: 30px;
+    text-align: center;
+    color: #CAAA57;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+/* .popupimg{
+    width: 100%;
+    padding-left: 10%;
+    float: right;
+} */
+.popup .content h1{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ethnocentric';
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 120%;
+}
+.popup .content p{
+    max-width: 430px;
+    font-family: "Glacial Indifference";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    color: #FFF;
+}
+.callpopup{
+    border-radius: 100px;
+    background: #CAAA57;
+    max-width: 150px;
+    margin: auto;
+}
+.callpopup a{    
+    color: #000;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 150%; 
+}
+/*
+.swiperpop{
+    background-color: #000;
+} 
+    .mySwiper4 {
+  width: 100%;
+  height:960px;
+  max-width: 9000px;
+  cursor: grab;
+  margin: 0 auto !important;
+}
+.swiper4 {
+  width: 100%;
+  max-width: 520px;
+  height: 100%;
+  margin: auto;
+}
+.swiper4 img {
+  width: 100% !important;
+  max-width: 518px;
+  height: 400px;
+  margin: auto;
+  object-fit: cover !important;
+} */
+@media screen and (max-width:950px) {
+    .content{
+        flex-direction: column;
+        text-align: center;
+    }
+    /* .callpopup{
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%);
+    } */
+    .popup .content p{margin: auto;}
+    .popup .content h1{
+        font-size: 40px;
+    }
+    .popup .content p{
+        font-size: 16px;
+        margin: auto;
+        padding: 0 10px 0;
+    }
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.btn1 a:hover{
+    background-color: #fff;
+    transition: 0.1s all ease-in-out;
+    color: #000;
+}
+.btn1:hover{
+    background-color: #FFF;
+    transition: 0.1s all ease-in-out;
+    color: #000;
+}
+.btn2:hover{
+    background-color: #CAAA57;
+    transition: 0.1s all ease-in-out;
+}
+.swiper2:hover {
+    box-shadow: 10px 10px 16px rgba(161, 161, 161, 0.5); 
+  transition: 0.1s ease-in;
+}
