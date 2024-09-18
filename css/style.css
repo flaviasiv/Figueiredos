@@ -122,6 +122,23 @@ swiper-container{
     line-height: 130%;
     margin: auto;
 }
+/* @media screen and (max-width:900px) {
+    .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2, .abouttitle h1, .abouttext h2, .mapsinfos h2{
+        font-family: "Glacial Indifference";
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 100%; 
+        margin: auto;
+        text-transform: uppercase;
+    }
+    .about p, .reviewstitle p, .gallerytitle p,.formgrid p, .abouttitle p, .abouttext p, .mapsinfos p{
+        font-family: "Glacial Indifference";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 130%;
+        margin: auto;
+    }    
+} */
 .postercontainer{
     margin-top: 80px;
 }
@@ -176,11 +193,6 @@ swiper-container{
     z-index: 999;
     right: 0;
     object-fit: cover;
-}
-.posterimgbg::before{
-    content: '';
-    position: absolute;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.45));
 }
 .posterimginfos{
     position: absolute;
@@ -259,8 +271,20 @@ swiper-slide.swiper1 {
     .poster{
         flex-direction: column;
         text-align: center;
-        padding: 0 20px;
+        padding: 0;
         height: 100%;
+        padding-top: 70px;
+    }
+    .posterimg{display:flex;flex-direction: column;gap: 30px;}
+    .posterimginfos{
+        position: relative;
+        transform: none;        
+    }
+    .posterimginfos h1{
+        font-size: 56px;
+    }
+    .posterimginfos h2{
+        font-size: 48px;
     }
     .posterinfos{
         flex-direction: column;
@@ -282,12 +306,6 @@ swiper-slide.swiper1 {
         margin: auto;
         object-fit: cover;
         border-radius: 30px;
-    }
-    .posterinfos h3{
-        font-size: 40px;
-    }
-    #posterbtn{
-        margin: auto;
     }
 } 
 .servicescontainer{
@@ -429,82 +447,9 @@ swiper-slide.swiper1 {
     z-index: 0;
 }
 @media screen and (max-width:990px) {
-    swiper-slide.swiper2 {
-        margin-left: 10px;
-        font-size: 12px;
-    }
     .servicestitle{
-        text-align: center;
+        padding: 70px 10px 50px;
     }
-    .servicestitle h2{
-        font-size: 40px;
-    }
-    .servicestitle .vetor1{
-        margin: auto;
-    }
-    .servicestitle p{
-        max-width: 359px;
-        font-size: 14px;
-        margin: auto;
-    }
-    .servicesgrid{
-        flex-direction: column;
-        gap: 50px;
-    }
-    .servicescards h1{
-        font-size: 29px;
-    }
-    .servicescard a h2{
-        font-family: "Glacial Indifference";
-        font-size: 18px;
-        font-weight: 700;
-        text-transform: uppercase;
-        width: 206px;
-        color: #fff;
-    }
-    .servicesgrid{
-        max-width: 420px;
-        margin: auto;
-    }
-    .servicescards{
-        padding: 0;
-        justify-content: center;
-        margin: auto;
-        align-items: center;
-    }
-    .servicescard a{
-        display: flex;
-        position: relative;
-        justify-content: space-between;
-        align-items: center;
-        width: 375px;
-        height: 97px;
-        padding: auto;
-    }
-    .bgservcar{
-        max-width: 375px;
-    }
-    .servicescard{
-        width: 100%;
-        max-width: 375px;
-        margin: auto;
-    }
-    .bgserv, .aboutimgpref{display: none;}    
-}
-@media screen and (max-width:400px) {
-    .servicescard a{
-        width: 355px;
-        height: 87px;
-    }
-    .bgservcar{
-        max-width: 355px;
-    }
-    .servicescard{
-        width: 100%;
-        max-width: 355px;
-        margin: auto;
-    }
-    
 }
 .aboutcontainer{
     background: url(../assets/aboutbg.png) no-repeat 100%;
@@ -583,8 +528,6 @@ swiper-slide.swiper1 {
     max-width: 104px;
 }
 .reviewscontainer{
-    flex-direction: column;
-    gap: 34px;
     padding: 80px 0 120px;
 }
 .logo{
@@ -617,50 +560,20 @@ swiper-slide.swiper1 {
     object-position: bottom;
 }
 @media screen and (max-width:990px) {
-    .about{
-        padding: 0;
-        flex-direction: column;
-        text-align: center;
-    }
-    .about .vetor1{margin: auto;}
-    .aboutpref{
-        margin-top: -30%;    
-        padding: 220px 0 100px;
-    }
-    .abouttext p, .abouttext{
-        text-align: center;
-        max-width: 383px;
-        margin: auto;
-        font-size: 14px;
-    }
-    .aboutimm{
-        display: block;
-        width: 100%;
-        padding-right: 5%;
+    .aboutcontainer{
+        padding: 120px 10px;
     }
     .preferencegrid{
+        flex-direction: column;
         align-items: center;
         margin: auto;
     }
-    .preferencecard{
-        text-align: left;
-        margin: auto;
-        padding: 0;
+    .aboutpref{
+        gap: 70px;
+        padding: 80px 0;    
     }
-    .preferencecard h3{
-        font-size: 23.035px;
-        line-height: 100%; /* 23.035px */
-    }
-    .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2{
-        font-size: 40px;
-    }
-}
-@media screen and (max-width:490px) {
-    .abouttext p, .abouttext{
-        max-width: 353px;
-    }
-    .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2{
-        font-size: 36px;
+    .imgvwbg{
+        height: 460px;
     }
 }
 .gallerytitle{
@@ -715,7 +628,7 @@ swiper-slide.swiper1 {
         height: 880px;
     }
     .mySwiper3 {
-      height:290px;
+      height:370px;
     }
     .swiper3 {
       max-width: 340px;
@@ -760,19 +673,16 @@ swiper-slide.swiper1 {
     height: 810px;
 }
 @media screen and (max-width:980px) {
-    .ig-embed .iframe{
+    .ig-embed iframe{
         max-width: 500px; 
         height: 500px;
     }    
 }
 @media screen and (max-width:580px) {
-    .ig-embed h2{
-        font-size: 36px;
-    }
-    .ig-embed .iframe{
+    .ig-embed iframe{
         width:100%;
         max-width: 300px; 
-        height: auto;
+        height: 450px;
     }    
 }
 .formgrid{
@@ -888,7 +798,6 @@ form button:hover{
     }
     .formp h2{
         width: 330px;    
-        font-size: 36px;
     }
     .formgrid{
     padding: 100px 10px;
