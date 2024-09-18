@@ -529,6 +529,7 @@ swiper-slide.swiper1 {
 .reviewscontainer{
     flex-direction: column;
     gap: 34px;
+    padding: 80px 0 120px;
 }
 .logo{
     display: flex;
@@ -975,7 +976,7 @@ form button:hover{
 .popuptest{
     display: flex;
     flex-direction: column;
-    padding: 200px 0 100px;
+    padding: 200px 0 0;
     gap: 39px;
 }
 .popup .content{
