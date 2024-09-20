@@ -118,7 +118,7 @@ swiper-container{
     background: linear-gradient(111deg, #585656 0%, #000 44.79%, #585656 96.32%);
 }
 .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2, .abouttitle h1, .abouttext h2, .mapsinfos h2{
-    font-family: "Glacial Indifference Bold";
+    font-family: "Glacial Indifference";
     font-size: 32px;
     font-weight: 700;
     line-height: 100%; /* 32px */
@@ -311,7 +311,7 @@ swiper-slide.swiper1 {
         top: 510px;
         z-index: 9999;
         left: 0;
-        background: none;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
         width: 100%;
         height: 400px;
         bottom: 0;
@@ -337,7 +337,7 @@ swiper-slide.swiper1 {
 .servicestitle .small{margin: auto;}
 .servicestitle h2{
     color: #000;
-    font-family: "Glacial Indifference Bold";
+    font-family: "Glacial Indifference";
     font-size: 32px;
     font-weight: bolder;
     line-height: 100%; /* 32px */
@@ -1037,18 +1037,15 @@ a{
     color: inherit;
 }
 .btn1 a:hover{
-    background-color: #fff;
+    background: #fff;
     transition: 0.1s all ease-in-out;
     color: #000;
 }
 .btn1:hover{
-    background-color: #FFF;
+    border: 1px solid #000;
+    background: #FFF;
     transition: 0.1s all ease-in-out;
     color: #000;
-}
-.btn2:hover{
-    background-color: #CAAA57;
-    transition: 0.1s all ease-in-out;
 }
 .swiper2:hover {
     box-shadow: 10px 10px 16px rgba(161, 161, 161, 0.5); 

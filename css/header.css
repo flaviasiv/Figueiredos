@@ -73,11 +73,10 @@ header {
     display:block;
     text-align: center;
     align-items: center;
-    color:#fff;
+    color:#fffffff1;
     text-decoration:none;
     font-family: "Glacial Indifference";
     font-size: 14px;
-    font-weight: 100;
     line-height: 130%;
     letter-spacing:1px
 }
@@ -87,7 +86,9 @@ header {
   justify-content: center;
 }
 .menu-linksbtn a:hover{
-  font-weight: bold;
+  background: -webkit-linear-gradient(90deg, #8E8E8E 0%, #D9D9D9 68.5%, #B4B4B4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     transition: 0.1s ease-in-out;
 }
 /* Navbar container */
@@ -163,41 +164,6 @@ background: var(--Color-Neutral-neutral-darker, #222);
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.menusocial{
-    right: 0;
-}
-.menusocial img{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-.menusocial ul{
-    position: relative;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    justify-content:space-between;
-    width:auto;
-    text-align: center;
-    gap: 8px;
-}
-.menusocial ul a {
-    text-decoration:none;
-    cursor: pointer;
-    align-items: center;
-}
-.menusocial ul a svg{
-  clip-path: #000;
-}
-.menusocial ul a:hover svg{
-  fill: #fff;
-  transition: 0.2s ease-in-out;
-}
-.menusocial ul a:hover svg circle{
-  fill: #fff;
-  transition: 0.2s ease-in-out;
 }
 .callnow a{
     display: flex;
