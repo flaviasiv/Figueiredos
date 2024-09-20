@@ -153,6 +153,7 @@ swiper-container{
     margin-top: 80px;
 }
 .poster{
+    position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -172,21 +173,22 @@ swiper-container{
     position: absolute;
     height: 100%;
     width: 100%;
-    max-width: 60vw;
+    max-width: 50vw;
     object-fit: cover;
     object-position: bottom;
     -o-object-position: bottom;
-    z-index: 999;
+    z-index: 99;
     right: 0;
     top: 0;
 }
 .overlay {
     position: absolute;
     top: 0;
-    left: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%);
-    width: 100%;
+    right: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+    width:50vw;
     height: 100%;
+    z-index: 999;
 }
 .posterimginfos{
     position: absolute;
@@ -238,6 +240,9 @@ swiper-container{
 .posterinfos ul li{
     list-style: none;
 }
+.btnsocials:hover svg circle{
+    fill: #FFF;
+}
 .postergrid{
     padding-bottom: 80px;
 }
@@ -285,7 +290,8 @@ swiper-slide.swiper1 {
     .posterimginfos{
         right: 50%;
         bottom: 0%;
-        transform: translate(50%, -50%);
+        transform: translate(50%, 130%);
+        z-index: 99999;
     }
     .posterimginfos h1{
         font-size: 56px;
@@ -362,7 +368,7 @@ swiper-slide.swiper1 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: 100vw;
     margin: auto;
     color: #000;
     gap: 50px;
@@ -373,7 +379,7 @@ swiper-slide.swiper1 {
     align-items: center;
     width: 100%;
     /* width p/ 4 cards */
-    max-width: 1350px;
+    max-width: 100vw;
     height: 100%;
     cursor: grab;
     margin: auto !important;
@@ -1036,15 +1042,9 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.btn1 a:hover{
-    background: #fff;
-    transition: 0.1s all ease-in-out;
-    color: #000;
-}
-.btn1:hover{
-    border: 1px solid #000;
+.btn1:hover, .btn2:hover{
     background: #FFF;
-    transition: 0.1s all ease-in-out;
+    border: 1px solid #000;
     color: #000;
 }
 .swiper2:hover {

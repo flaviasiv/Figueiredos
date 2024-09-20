@@ -85,7 +85,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-.menu-linksbtn a:hover{
+.btnhd:hover{
   background: -webkit-linear-gradient(90deg, #8E8E8E 0%, #D9D9D9 68.5%, #B4B4B4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
