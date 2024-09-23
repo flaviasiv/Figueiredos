@@ -177,8 +177,8 @@ background: var(--Color-Neutral-neutral-darker, #222);
     font-weight: 700;
     line-height: 120%;
     align-items: center;
-    padding: 4px 0px;
-    width: 159px;
+    padding: 4px 5px;
+    width: 169px;
     text-align: left;
     margin: auto;
 }
@@ -214,6 +214,9 @@ position: absolute;
       top: 50%;
       transform: translate(-50%, -50%);
       z-index: 99;
+    }
+    .callm a{
+      width: 159px;
     }
   .box{
     width: fit-content;

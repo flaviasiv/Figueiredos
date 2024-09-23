@@ -115,7 +115,7 @@ swiper-container{
     font-weight: 700;
 }
 .bg-grey{
-    background: linear-gradient(111deg, #585656 0%, #000 44.79%, #585656 96.32%);
+    background: #000;
 }
 .about h1, .reviewstitle h3, .gallerytitle h3,.formgrid h2, .abouttitle h1, .abouttext h2, .mapsinfos h2{
     font-family: "Glacial Indifference";
@@ -531,7 +531,7 @@ swiper-slide.swiper1 {
     transition: 0.3s all;
 } */
 .preferencecard svg{
-    width: 87px;
+    width: 120px;
 }
 .preferencecard h3{
     font-family: "Glacial Indifference";
@@ -652,6 +652,19 @@ swiper-slide.swiper1 {
       max-width: 340px;
     }
     .gallerytitle p{font-size: 14px;}
+}
+@media screen and (max-width:450px) {  
+    .mySwiper3{
+        height: 100%;
+    }
+    .swiper3 img , .swiper3{
+        width: 100%;
+        object-fit: cover;
+        max-width: 100%;
+    }
+    .swiper3{
+        margin-bottom: 30px;
+    }
 }
 
 /* IG CONTAINER */
@@ -1046,6 +1059,10 @@ a{
     background: #FFF;
     border: 1px solid #000;
     color: #000;
+}
+.servicesbtn:hover{
+    background: linear-gradient(86deg, #515151 0%, #9F9F9F 46.44%, #858585 100%);
+    border: none
 }
 .swiper2:hover {
     box-shadow: 10px 10px 16px rgba(161, 161, 161, 0.5); 
