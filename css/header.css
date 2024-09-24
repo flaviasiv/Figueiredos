@@ -177,6 +177,7 @@ background: var(--Color-Neutral-neutral-darker, #222);
     font-weight: 700;
     line-height: 120%;
     align-items: center;
+    letter-spacing: 0;
     padding: 4px 5px;
     width: 169px;
     text-align: left;
