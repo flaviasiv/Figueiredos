@@ -328,7 +328,7 @@ swiper-slide.swiper1 {
     }
     .overlay {
         position: absolute;
-        top: 418px;
+        top: 375px;
         z-index: 9999;
         left: 0;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
