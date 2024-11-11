@@ -137,18 +137,18 @@ footer{
     position: relative;
     display: flex;
     justify-content: space-between;
-    height: 120px;
+    height: 90px;
     width: 100%;
     max-width: 9990px;
     margin: auto;
-    padding: 50px 90px;
+    padding: 0 90px;
     align-items: center;
     text-align: center;    
-    border-top: 1px solid #EEEEF0;
+    /* border-top: 1px solid #EEEEF0;
     border-top-width: 1px;
     border-top-style: solid;
     border-image: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
 }
 .rights ul{
     display: flex;

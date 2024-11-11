@@ -39,7 +39,7 @@ header {
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    background: var(--Color-Neutral-neutral-darker, #222);
+    background: var(--Color-Neutral-neutral-darker, #000);
     padding: 0 50px 0 50px;
     height: 80px;
     scroll-behavior: smooth;
@@ -86,9 +86,7 @@ header {
   justify-content: center;
 }
 .btnhd:hover{
-  background: -webkit-linear-gradient(90deg, #8E8E8E 0%, #D9D9D9 68.5%, #B4B4B4 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #c0c0c0;
     transition: 0.1s ease-in-out;
 }
 /* Navbar container */
@@ -138,8 +136,8 @@ header {
 .dropdown-content {
   display: none;
   position: absolute;
-  border: 1px solid var(--Color-Neutral-neutral-darker, #222);
-background: var(--Color-Neutral-neutral-darker, #222);
+  border: 1px solid var(--Color-Neutral-neutral-darker, #000);
+  background: var(--Color-Neutral-neutral-darker, #000);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -182,9 +180,6 @@ background: var(--Color-Neutral-neutral-darker, #222);
     width: 169px;
     text-align: left;
     margin: auto;
-}
-.callnow:hover{
-  background: Linear;
 }
 .btn-toggle{display: none;}
 .logo-m{
