@@ -1067,6 +1067,12 @@ form button:hover{
   object-fit: cover !important;
 } */
 @media screen and (max-width:950px) {
+    .popuptest{
+        padding: 170px 0 0;
+    }
+    .popuptest .firstswip{
+        top: 85px;
+    }
     .content{
         flex-direction: column;
         text-align: center;
