@@ -73,7 +73,7 @@ header {
     display:block;
     text-align: center;
     align-items: center;
-    color:#fffffff1;
+    color:#ffffff;
     text-decoration:none;
     font-family: "Glacial Indifference";
     font-size: 14px;
@@ -86,8 +86,8 @@ header {
   justify-content: center;
 }
 .btnhd:hover{
-  color: #c0c0c0;
-    transition: 0.1s ease-in-out;
+  font-weight: bold;
+  transition: 0.1s ease-in-out;
 }
 /* Navbar container */
 /* .navbar {

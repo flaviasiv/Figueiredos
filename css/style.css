@@ -25,6 +25,8 @@
 }
 body{
     font-family: 'Glacial Inddifference', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     color: #000;
 }
 main{
@@ -104,7 +106,7 @@ swiper-container{
   border-radius: 100px;
   background: linear-gradient(90deg, #8E8E8E 0%, #D9D9D9 68.5%, #B4B4B4 100%);
   cursor: pointer;
-  border: none;
+  border: 1px solid #ffffff30;
   margin: auto;  
   z-index: 999;
 }
@@ -426,6 +428,7 @@ swiper-slide.swiper1 {
   margin-left: 15px;
   overflow: hidden;
     border: 1px solid #000;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 .swiper2 img {
@@ -1110,6 +1113,7 @@ a{
     border: none
 }
 .swiper2:hover {
-    box-shadow: 10px 10px 16px rgba(161, 161, 161, 0.5); 
+    scale: 1.025;
+    /* box-shadow: 10px 10px 16px rgba(161, 161, 161, 0.5);  */
   transition: 0.1s ease-in;
 }
