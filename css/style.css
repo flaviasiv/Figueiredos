@@ -809,7 +809,7 @@ form {
     width:750px;
     max-width: 100%;
     margin: auto;
-    height: 579px;
+    height: 100%;
     background-color: #FFF;
     border-radius: 24px;
     padding: 32px;
@@ -823,7 +823,7 @@ form {
     display: flex;
     flex-direction: column;
     color: #000;
-    gap: 10px;
+    gap: 8px;
 }
 #form input, textarea{
     width: 100%;
@@ -867,8 +867,11 @@ form button:hover{
         width: 330px;    
     }
     .formgrid{
-    padding: 100px 10px;
-}
+        padding: 100px 10px;
+    }
+    form{
+        padding: 30px 20px;
+    }
 }
 .mapscontainer{
     position:relative;

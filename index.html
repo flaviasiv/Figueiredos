@@ -19,6 +19,24 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-KG3RZKBH');</script>
   <!-- End Google Tag Manager -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1421420465636319');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1421420465636319&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
   <title>Figueiredos - Cleaning Spaces Beautifully Done</title>
   <link rel="icon" type="image/x-icon" href="./assets/icon.png">
   <meta name="author" content="Flavia Sigoli"/>
@@ -869,6 +887,8 @@
                 <label for="message">Type your message:
                     <textarea name="message" id="message" cols="50" rows="10"></textarea>
                 </label>
+                <div class="g-recaptcha" data-sitekey="6LfDPCMrAAAAAP4luuYmUr2QTSrdgZcNxHSzXX1E" data-action="LOGIN"></div>
+                <input type="text" name="_gotcha" style="display:none;">
                 <button type="submit" class="btn">Submit</button>
             </form>
         </div>
